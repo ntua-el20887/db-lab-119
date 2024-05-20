@@ -35,6 +35,6 @@ db_params = {
 }
 
 # Example usage
-insert_image(db_params, 'recipe', 'image', 'path/to/your/image.jpg', 'recipe_id', 1)
-insert_image(db_params, 'cooking_equipment', 'actual_image', 'chef_1.jpg', 'equipment_id', 1)
-insert_image(db_params, 'chef', 'actual_image', 'chef_1.jpg', 'chef_id', 1)
+#insert_image(db_params, 'recipe', 'image', 'path/to/your/image.jpg', 'recipe_id', 1)
+#insert_image(db_params, 'cooking_equipment', 'actual_image', 'chef_1.jpg', 'equipment_id', 1)
+insert_image(db_params, 'chef', 'actual_image', 'images/chef/chef_1.jpg', 'chef_id', 1)
