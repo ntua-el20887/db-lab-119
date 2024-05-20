@@ -42,7 +42,7 @@ CREATE TABLE recipe(
  prep_time TIME NOT NULL,
  difficulty SMALLINT NOT NULL CHECK (0 < difficulty < 6),
  recipe_name VARCHAR(45) NOT NULL UNIQUE,
- image BLOB,
+ image LONGBLOB,
  carbs_per_serving INT UNSIGNED NOT NULL,
  fats_per_serving INT UNSIGNED NOT NULL,
  proteins_per_serving INT UNSIGNED NOT NULL,
@@ -112,7 +112,7 @@ CREATE TABLE cooking_equipment(
  equipment_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
  equipment_name VARCHAR(20) NOT NULL UNIQUE,
  instructions VARCHAR(100) NOT NULL,
- image BLOB,
+ image LONGBLOB,
  image_description VARCHAR(100),
  PRIMARY KEY(equipment_id)
 );
@@ -194,7 +194,7 @@ DELIMITER ;
  birth_year YEAR NOT NULL,
  phone_number INT NOT NULL,
  image_description VARCHAR(200),
- actual_image BLOB,
+ actual_image LONGBLOB,
  age INT NOT NULL,
  years_of_work_experience INT NOT NULL,
  professional_status VARCHAR(45) NOT NULL,
